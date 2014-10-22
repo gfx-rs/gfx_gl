@@ -27,4 +27,10 @@
 
 #[phase(plugin)] extern crate gl_generator;
 
-generate_gl_bindings!("gl", "core", "4.5", "struct", [ "GL_EXT_texture_filter_anisotropic" ])
+generate_gl_bindings!{
+    api: "gl", 
+    profile: "core", 
+    version: "4.5", 
+    generator: "struct", 
+    extensions: [ "GL_EXT_texture_filter_anisotropic" ]
+}
