@@ -25,12 +25,4 @@
 //! `GlDevice::with_gl` method. It is also used internally by the `GlDevice`
 //! implementation.
 
-#[phase(plugin)] extern crate gl_generator;
-
-generate_gl_bindings!{
-    api: "gl", 
-    profile: "core", 
-    version: "4.5", 
-    generator: "struct", 
-    extensions: [ "GL_EXT_texture_filter_anisotropic" ]
-}
+include!(concat!(env!("OUT_DIR"), "/gl_bindings.rs"));
