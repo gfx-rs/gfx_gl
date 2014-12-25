@@ -9,7 +9,7 @@ fn main() {
 
     let mut file = File::create(&dest.join("gl_bindings.rs")).unwrap();
 
-    gl_generator::generate_bindings(gl_generator::GlobalGenerator,
+    gl_generator::generate_bindings(gl_generator::StructGenerator,
                                                    gl_generator::registry::Ns::Gl,
                                                    khronos_api::GL_XML,
                                                    vec!["GL_EXT_texture_filter_anisotropic".to_string()],
