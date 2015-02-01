@@ -17,8 +17,11 @@
 name = "gfx_gl"
 version = "0.1.0"
 build = "build.rs"
-authors = [
-]
+description = "OpenGL bindings for gfx, based on gl-rs"
+homepage = "https://github.com/gfx/gfx_gl"
+repository = "https://github.com/gfx/gfx_gl"
+license = "Apache-2.0"
+authors = ["The Gfx-rs Developers"]
 
 [lib]
 name = "gfx_gl"
