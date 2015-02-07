@@ -15,7 +15,7 @@
 [package]
 
 name = "gfx_gl"
-version = "0.1.0"
+version = "0.1.1"
 build = "build.rs"
 description = "OpenGL bindings for gfx, based on gl-rs"
 homepage = "https://github.com/gfx/gfx_gl"
