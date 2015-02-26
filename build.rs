@@ -11,6 +11,7 @@ fn main() {
 
     gl_generator::generate_bindings(gl_generator::StructGenerator,
                                                    gl_generator::registry::Ns::Gl,
+                                                   gl_generator::Fallbacks::All,
                                                    khronos_api::GL_XML,
                                                    vec!["GL_EXT_texture_filter_anisotropic".to_string()],
                                                    "4.5", "core",
