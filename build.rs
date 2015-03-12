@@ -1,11 +1,16 @@
+#![feature(path)]
+
 extern crate gl_generator;
 extern crate khronos_api;
 
-use std::os;
-use std::old_io::File;
+use std::env;
+use std::fs::File;
+use std::path::Path;
 
 fn main() {
-    let dest = Path::new(os::getenv("OUT_DIR").unwrap());
+    let out_dir = env::var("OUT_DIR").unwrap();
+
+    let dest = Path::new(&out_dir);
 
     let mut file = File::create(&dest.join("gl_bindings.rs")).unwrap();
 
