@@ -15,7 +15,7 @@
 [package]
 
 name = "gfx_gl"
-version = "0.1.5"
+version = "0.2.0"
 build = "build.rs"
 description = "OpenGL bindings for gfx, based on gl-rs"
 homepage = "https://github.com/gfx-rs/gfx_gl"
@@ -28,9 +28,9 @@ name = "gfx_gl"
 path = "src/lib.rs"
 
 [build-dependencies]
-gl_generator = "0.1"
+gl_generator = "0.2"
 khronos_api = "0.0"
 
 [dependencies]
 gl_common = "0.1"
-libc = "0.1"
+libc = "0.2"
