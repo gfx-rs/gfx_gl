@@ -28,7 +28,7 @@ name = "gfx_gl"
 path = "src/lib.rs"
 
 [build-dependencies]
-gl_generator = "0.3"
+gl_generator = "0.4"
 khronos_api = "0.0"
 
 [dependencies]
