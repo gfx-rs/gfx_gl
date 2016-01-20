@@ -29,7 +29,4 @@ path = "src/lib.rs"
 
 [build-dependencies]
 gl_generator = "0.4"
-khronos_api = "0.0"
-
-[dependencies]
-gl_common = "0.1"
+khronos_api = "1.0"
