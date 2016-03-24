@@ -1,6 +1,6 @@
 extern crate gl_generator;
-extern crate khronos_api;
 
+use gl_generator::{Registry, Api, Profile, Fallbacks};
 use std::env;
 use std::fs::File;
 use std::path::Path;
@@ -12,11 +12,7 @@ fn main() {
 
     let mut file = File::create(&dest.join("gl_bindings.rs")).unwrap();
 
-    gl_generator::generate_bindings(gl_generator::StructGenerator,
-                                                   gl_generator::registry::Ns::Gl,
-                                                   gl_generator::Fallbacks::All,
-                                                   khronos_api::GL_XML,
-                                                   vec!["GL_EXT_texture_filter_anisotropic".to_string()],
-                                                   "4.5", "core",
-                                                   &mut file).unwrap();
+    Registry::new(Api::Gl, (4, 5), Profile::Core, Fallbacks::All, ["GL_EXT_texture_filter_anisotropic"])
+        .write_bindings(gl_generator::StructGenerator, &mut file)
+        .unwrap();
 }
