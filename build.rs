@@ -15,6 +15,7 @@ fn main() {
     Registry::new(Api::Gl, (4, 5), Profile::Core, Fallbacks::All, [
         "GL_EXT_texture_filter_anisotropic",
         "GL_ARB_draw_buffers_blend",
+        "GL_ARB_program_interface_query",
         ])
         .write_bindings(gl_generator::StructGenerator, &mut file)
         .unwrap();
