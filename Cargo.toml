@@ -15,7 +15,7 @@
 [package]
 
 name = "gfx_gl"
-version = "0.3.2"
+version = "0.4.0"
 build = "build.rs"
 description = "OpenGL bindings for gfx, based on gl-rs"
 homepage = "https://github.com/gfx-rs/gfx_gl"
@@ -28,4 +28,4 @@ name = "gfx_gl"
 path = "src/lib.rs"
 
 [build-dependencies]
-gl_generator = "0.5"
+gl_generator = "0.7"
