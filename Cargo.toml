@@ -14,4 +14,4 @@ name = "gfx_gl"
 path = "src/lib.rs"
 
 [build-dependencies]
-gl_generator = "0.9"
+gl_generator = "0.11"
